@@ -17,7 +17,10 @@ namespace EnocaApi.Domain.Entities
 
         public int CarrierConfigurationId { get; set; }
 
-        // ilişki kurmadım
+        // ilişki 
+        public List<CarrierConfigurations> CarrierConfigurations { get; set; }
+
+        public List<Orders> Orders { get; set; }
 
     }
 }
