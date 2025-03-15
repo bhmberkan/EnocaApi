@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{839E1CEF-D9CD-46E8-BFED-5C943FB7F898}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{F877665C-084D-406B-949D-50BB30EB40F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D4F1D0A9-5990-45FD-85B1-9A7DB61D7DB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CCA130F8-0147-49AA-8E5B-174E38B76C67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{737B0FEB-935F-463F-9015-880DFC880754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnocaApi.Application", "Core\EnocaApi.Application\EnocaApi.Application.csproj", "{967C841C-0E40-4219-940B-9A6D94E5E66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnocaApi.Domain", "Core\EnocaApi.Domain\EnocaApi.Domain.csproj", "{5B978E24-4CD7-4969-967A-6760281D7C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnocaApi.Persistence", "EnocaApi.Persistence\EnocaApi.Persistence.csproj", "{B2597DE8-A5EB-473D-96FA-B8BA644E8908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnocaApi.WebApi", "Presentation\EnocaApi.WebApi\EnocaApi.WebApi.csproj", "{A2A87641-2035-45AB-8A96-4CA85053FF01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnocaApi.Infrastructure", "Infrastructure\EnocaApi.Infrastructure\EnocaApi.Infrastructure.csproj", "{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{967C841C-0E40-4219-940B-9A6D94E5E66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967C841C-0E40-4219-940B-9A6D94E5E66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967C841C-0E40-4219-940B-9A6D94E5E66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967C841C-0E40-4219-940B-9A6D94E5E66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B978E24-4CD7-4969-967A-6760281D7C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B978E24-4CD7-4969-967A-6760281D7C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B978E24-4CD7-4969-967A-6760281D7C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B978E24-4CD7-4969-967A-6760281D7C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2597DE8-A5EB-473D-96FA-B8BA644E8908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2597DE8-A5EB-473D-96FA-B8BA644E8908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2597DE8-A5EB-473D-96FA-B8BA644E8908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2597DE8-A5EB-473D-96FA-B8BA644E8908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A87641-2035-45AB-8A96-4CA85053FF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A87641-2035-45AB-8A96-4CA85053FF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A87641-2035-45AB-8A96-4CA85053FF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A87641-2035-45AB-8A96-4CA85053FF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{967C841C-0E40-4219-940B-9A6D94E5E66F} = {839E1CEF-D9CD-46E8-BFED-5C943FB7F898}
+		{5B978E24-4CD7-4969-967A-6760281D7C38} = {839E1CEF-D9CD-46E8-BFED-5C943FB7F898}
+		{B2597DE8-A5EB-473D-96FA-B8BA644E8908} = {D4F1D0A9-5990-45FD-85B1-9A7DB61D7DB8}
+		{A2A87641-2035-45AB-8A96-4CA85053FF01} = {CCA130F8-0147-49AA-8E5B-174E38B76C67}
+		{B10D646C-E7D9-4B4B-9D58-899A22EEF0CA} = {D4F1D0A9-5990-45FD-85B1-9A7DB61D7DB8}
+	EndGlobalSection
+EndGlobal
