@@ -10,12 +10,19 @@ namespace EnocaApi.Domain.Entities
     {
         public int CarrierConfigurationsId { get; set; }
 
-     //   public int CarrierId { get; set; }
 
         public int CarrierMaxDesi {  get; set; }
         public int CarrierMinDesi {  get; set; }
         public decimal CarrierCost { get; set; }
-        // ilişkiler eksik
+     
 
+
+        // ilişki
+          public int CarrierId { get; set; }
+
+        public Carriers Carriers { get; set; }
     }
 }
+
+
+

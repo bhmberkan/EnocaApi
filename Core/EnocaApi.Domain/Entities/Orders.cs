@@ -9,13 +9,17 @@ namespace EnocaApi.Domain.Entities
     public class Orders
     {
         public int OrdersId { get; set; }
-     //   public int CarrierID    { get; set; }
+    
 
         public int OrderDesi { get; set; }
         public DateTime OrderDate { get; set; }
 
         public decimal ORderCarrierCost { get; set; }
 
-        // ilişki yok 
+      
+        // ilişki 
+        public int CarrierId { get; set; }
+
+        public Carriers Carriers { get; set; }
     }
 }
