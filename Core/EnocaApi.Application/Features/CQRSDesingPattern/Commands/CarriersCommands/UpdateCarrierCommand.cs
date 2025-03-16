@@ -4,23 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnocaApi.Domain.Entities
+namespace EnocaApi.Application.Features.CQRSDesingPattern.Commands.CarriersCommands
 {
-    public class Carriers
+    public class UpdateCarrierCommand
     {
         public int CarriersId { get; set; }
-        public string CarrierName { get; set; } 
+        public string CarrierName { get; set; }
 
         public bool CarrrierIsActive { get; set; }
 
         public int CarrierPlusDesiCost { get; set; }
 
         public int CarrierConfigurationId { get; set; }
-
-        // ilişki 
-        public List<CarrierConfigurations> CarrierConfigurations { get; set; }
-
-        public List<Orders> Orders { get; set; }
-
     }
 }

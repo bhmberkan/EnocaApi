@@ -12,13 +12,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\Core\EnocaApi.Application\EnocaApi.Application.csproj" />
     <ProjectReference Include="..\..\Core\EnocaApi.Domain\EnocaApi.Domain.csproj" />
     <ProjectReference Include="..\..\EnocaApi.Persistence\EnocaApi.Persistence.csproj" />
   </ItemGroup>

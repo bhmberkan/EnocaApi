@@ -7,8 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRSDesingPattern\" />
-    <Folder Include="Features\MediatorDesignPattern\" />
+    <Folder Include="Features\CQRSDesingPattern\Handlers\OrderHandlers\" />
+    <Folder Include="Features\CQRSDesingPattern\Queries\OrderQueries\" />
+    <Folder Include="Features\CQRSDesingPattern\Results\OrderResult\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
   <ItemGroup>
