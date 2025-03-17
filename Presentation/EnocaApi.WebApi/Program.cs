@@ -1,5 +1,6 @@
 using EnocaApi.Application.Features.CQRSDesingPattern.Handlers.CarrierConfigurationHandlers;
 using EnocaApi.Application.Features.CQRSDesingPattern.Handlers.CarriersHandlers;
+using EnocaApi.Application.Features.CQRSDesingPattern.Handlers.OrderHandlers;
 using EnocaApi.Application.Features.CQRSDesingPattern.Queries.CarrierConfigurationQueries;
 using EnocaApi.Persistence;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +26,13 @@ builder.Services.AddScoped<UpdateCarrierConfigurationCommandHandler>();
 builder.Services.AddScoped<RemoveCarrierConfigurationCommandHandler>();
 builder.Services.AddScoped<GetCarrierConfigurationByIdHandler>();
 builder.Services.AddScoped<GetCarrierConfigurationQueryHandler>();
+
+
+builder.Services.AddScoped<CreateOrderCommandHandler>();
+builder.Services.AddScoped<UpdateOrderCommandHandler>();
+builder.Services.AddScoped<RemoveOrderCommandHandler>();
+builder.Services.AddScoped<GetOrderByIdQueryHandler>();
+builder.Services.AddScoped<GetOrderQueryHandler>();
 
 // Add services to the container.
 

@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnocaApi.Application.Features.CQRSDesingPattern.Commands.OrdersCommands
+namespace EnocaApi.Application.Features.CQRSDesingPattern.Queries.OrderQueries
 {
-    public class RemoveOrderCommand
+    public class GetOrderByIdQuery
     {
-        public RemoveOrderCommand(int ordersId)
+        public GetOrderByIdQuery(int ordersId)
         {
             OrdersId = ordersId;
         }
 
         public int OrdersId { get; set; }
-
 
     }
 }

@@ -4,6 +4,7 @@ using EnocaApi.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EnocaApi.Persistence.Migrations
 {
     [DbContext(typeof(EnocaContext))]
-    partial class EnocaContextModelSnapshot : ModelSnapshot
+    [Migration("20250317060934_mig_3")]
+    partial class mig_3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,6 +86,12 @@ namespace EnocaApi.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrdersId"));
 
+                    b.Property<int>("CarrierId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CarriersId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("OrderCarrierCost")
                         .HasColumnType("decimal(18,2)");
 
@@ -92,12 +101,9 @@ namespace EnocaApi.Persistence.Migrations
                     b.Property<int>("OrderDesi")
                         .HasColumnType("int");
 
-                    b.Property<int>("carriersId")
-                        .HasColumnType("int");
-
                     b.HasKey("OrdersId");
 
-                    b.HasIndex("carriersId");
+                    b.HasIndex("CarriersId");
 
                     b.ToTable("Orders");
                 });
@@ -117,7 +123,7 @@ namespace EnocaApi.Persistence.Migrations
                 {
                     b.HasOne("EnocaApi.Domain.Entities.Carriers", "Carriers")
                         .WithMany("Orders")
-                        .HasForeignKey("carriersId")
+                        .HasForeignKey("CarriersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

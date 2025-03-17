@@ -1,4 +1,5 @@
 ﻿using EnocaApi.Application.Features.CQRSDesingPattern.Results.CarrierResult;
+using EnocaApi.Domain.Entities;
 using EnocaApi.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,7 +25,10 @@ namespace EnocaApi.Application.Features.CQRSDesingPattern.Handlers.CarriersHandl
             return values.Select(x => new GetCArrierQueryResult()
             {
                 CarriersId = x.CarriersId,
-                CarrierName = x.CarrierName
+                CarrierName = x.CarrierName,
+                CarrrierIsActive=x.CarrrierIsActive,
+                CarrierPlusDesiCost=x.CarrierPlusDesiCost,
+                CarrierConfigurationId=x.CarrierConfigurationId
 
             }).ToList();
         }
