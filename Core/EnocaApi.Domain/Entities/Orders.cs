@@ -14,11 +14,11 @@ namespace EnocaApi.Domain.Entities
         public int OrderDesi { get; set; }
         public DateTime OrderDate { get; set; }
 
-        public decimal ORderCarrierCost { get; set; }
+        public decimal OrderCarrierCost { get; set; }
 
       
         // ilişki 
-        public int CarrierId { get; set; }
+        public int carriersId { get; set; }
 
         public Carriers Carriers { get; set; }
     }
